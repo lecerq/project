@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    # Мы возвращаем HTML код прямо из Python
     return """<!DOCTYPE html> <html>          <head>
     <meta charset="UTF-8">
     <title>Личный сайт</title>
@@ -32,4 +31,5 @@ def home():
 </html>"""
 
 if __name__ == "__main__":
+
     app.run(debug=True)
